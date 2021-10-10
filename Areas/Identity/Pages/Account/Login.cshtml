@@ -5,11 +5,12 @@
     ViewData["Title"] = "Iniciar Sesión";
 }
 
-<h1>@ViewData["Title"]</h1>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <section>
-            <form id="account" method="post">
+            <form class ="formulario" id="account" method="post">
+                <div class="contenedor">
+                <h1>Inicie Sesión</h1>
                 <h4>Use a local account to log in.</h4>
                 <hr />
                 <div asp-validation-summary="All" class="text-danger"></div>
@@ -44,6 +45,7 @@
                     <p>
                         <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
                     </p>
+                </div>
                 </div>
             </form>
         </section>

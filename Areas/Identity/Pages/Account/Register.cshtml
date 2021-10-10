@@ -1,15 +1,14 @@
 @page
 @model RegisterModel
 @{
-    ViewData["Title"] = "Registrarse";
+    ViewData["Title"] = "";
 }
 
-<h1>@ViewData["Title"]</h1>
-
 <div class="row">
-    <div class="col-md-4">
-        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <div class="hola">
+    <div class="col-md-12">
+        <form asp-route-returnUrl="@Model.ReturnUrl" class="formulario" method="post">
+            <div class="contenedor">
+                <h1>Registrese</h1>
             <h4>Crear nueva cuenta</h4>
             <hr />
             <div asp-validation-summary="All" class="text-danger"></div>
