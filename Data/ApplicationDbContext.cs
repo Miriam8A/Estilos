@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Estilos.Models;
 
 namespace Estilos.Data
 {
@@ -12,5 +13,7 @@ namespace Estilos.Data
             : base(options)
         {
         }
+
+        public DbSet<Estilos.Models.Contact> DataContactos { get; set;}
     }
 }
