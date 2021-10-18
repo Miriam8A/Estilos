@@ -3,15 +3,17 @@ using System;
 using Estilos.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Estilos.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211018195325_Catalogo2Migration")]
+    partial class Catalogo2Migration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,10 +94,6 @@ namespace Estilos.Data.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("timestamp without time zone")
                         .HasColumnName("duedate");
-
-                    b.Property<string>("ImagenName")
-                        .HasColumnType("text")
-                        .HasColumnName("image");
 
                     b.Property<string>("Name")
                         .HasColumnType("text")
