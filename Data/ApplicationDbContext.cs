@@ -15,5 +15,9 @@ namespace Estilos.Data
         }
 
         public DbSet<Estilos.Models.Contact> DataContactos { get; set;}
+
+        public DbSet<Estilos.Models.Product> DataProducts { get; set;}
+
+        public DbSet<Estilos.Models.Product2> DataProducts2 { get; set;}
     }
 }
