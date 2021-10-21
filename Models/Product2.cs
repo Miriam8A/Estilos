@@ -14,6 +14,9 @@ namespace Estilos.Models
         [Column("name")]
         public string Name {get; set;}
 
+        [Column("descripcion")]
+        public string Descripcion {get; set;}
+
         [Column("price")]
         public Decimal Price {get; set;}
 
