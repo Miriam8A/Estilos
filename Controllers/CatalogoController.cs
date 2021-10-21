@@ -27,5 +27,23 @@ namespace Estilos.Controllers
             var productos = from o in _context.DataProducts2 select o;
             return View(await productos.ToListAsync());
         }
+
+        public async Task<IActionResult> Details(int id)
+        {
+           Product objProduct = await _context.DataProducts.FindAsync(id);
+           if(objProduct == null){
+               return NotFound();
+           }
+           return View(objProduct);
+        }
+
+        public async Task<IActionResult> Details2(int id)
+        {
+           Product2 objProduct2 = await _context.DataProducts2.FindAsync(id);
+           if(objProduct2 == null){
+               return NotFound();
+           }
+           return View(objProduct2);
+        }
     }
 }
