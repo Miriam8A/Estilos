@@ -149,6 +149,33 @@ namespace Estilos.Data.Migrations
                     b.ToTable("t_proforma");
                 });
 
+            modelBuilder.Entity("Estilos.Models.Proforma2", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("numeric");
+
+                    b.Property<int?>("ProductoId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("UserID")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductoId");
+
+                    b.ToTable("t_proforma2");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -350,6 +377,15 @@ namespace Estilos.Data.Migrations
             modelBuilder.Entity("Estilos.Models.Proforma", b =>
                 {
                     b.HasOne("Estilos.Models.Product", "Producto")
+                        .WithMany()
+                        .HasForeignKey("ProductoId");
+
+                    b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("Estilos.Models.Proforma2", b =>
+                {
+                    b.HasOne("Estilos.Models.Product2", "Producto")
                         .WithMany()
                         .HasForeignKey("ProductoId");
 
