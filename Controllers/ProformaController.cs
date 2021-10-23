@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Identity;
+using System.Dynamic;
 
 namespace Estilos.Controllers
 {
@@ -31,7 +32,13 @@ namespace Estilos.Controllers
                 Include(p => p.Producto).
                 Where(s => s.UserID.Equals(userID));
 
-                return View(await items.ToListAsync());
+                var elements = await items.ToListAsync();
+                var total = elements.Sum(c => c.Quantity * c.Price);
+                dynamic model = new ExpandoObject();
+                model.montoTotal = total;
+                model.proformas = elements;
+
+                return View(model);
         }
 
          public async Task<IActionResult> Delete(int? id)
