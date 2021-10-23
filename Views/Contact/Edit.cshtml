@@ -1,12 +1,11 @@
 @model Estilos.Models.Contact
 @{
-    ViewData["Title"] = "Contacto";
+    ViewData["Title"] = "Contáctanos";
 }
 
 <h1>@ViewData["Title"]</h1>
 
 <div class="text-center">
-    <h1 class="display-4">Formulario de Contacto</h1>
 
     <form asp-controller="Contact" asp-action="Edit">
         <input type="hidden" asp-for="Id" />
