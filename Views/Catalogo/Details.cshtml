@@ -20,7 +20,7 @@
                 <p class="card-text">@Html.DisplayFor(model => model.Descripcion)</p>
                 <h5 class="card-title">@Html.DisplayFor(model => model.Name)</h5>
                 <h5 class="card-title">Precio: S/.@Html.DisplayFor(model => model.Price)</h5>
-                <a class="btn btn-primary" asp-action="Add" asp-route-id="Id">Agregar</a>
+                <a class="btn btn-primary" asp-action="Add" asp-route-id="@Model.Id">Agregar</a>
             </div>
         </div>
     </div>
