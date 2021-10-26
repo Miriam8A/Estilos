@@ -23,8 +23,7 @@ namespace Estilos.Controllers
             _context = context;
             _userManager = userManager;
         }
-
-        public async Task<IActionResult> Index()
+ public async Task<IActionResult> Index()
         {
             var userID = _userManager.GetUserName(User);
             var items = from o in _context.DataProforma select o;
