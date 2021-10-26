@@ -16,12 +16,9 @@ namespace Estilos.Data
 
         public DbSet<Estilos.Models.Contact> DataContactos { get; set;}
 
-        public DbSet<Estilos.Models.Product> DataProducts { get; set;}
-
-        public DbSet<Estilos.Models.Product2> DataProducts2 { get; set;}
+        public DbSet<Estilos.Models.Product> DataProducts {get; set;}
 
         public DbSet<Estilos.Models.Proforma> DataProforma { get; set;}
-        
-        public DbSet<Estilos.Models.Proforma2> DataProforma2 { get; set;}
+
     }
 }
