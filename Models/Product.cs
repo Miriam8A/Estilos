@@ -28,5 +28,8 @@ namespace Estilos.Models
 
          [Column("status")]
         public String Status { get; set;}
+
+        [Column("categoria")]
+        public String Categoria { get; set;}
     }
 }
