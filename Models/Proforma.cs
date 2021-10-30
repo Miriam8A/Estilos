@@ -20,5 +20,7 @@ namespace Estilos.Models
         public int Quantity { get; set;}
 
         public Decimal Price { get; set;}
+
+        public String Status { get; set;} = "PENDIENTE";
     }
 }
