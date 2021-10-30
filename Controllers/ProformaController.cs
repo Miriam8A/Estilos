@@ -29,7 +29,7 @@ namespace Estilos.Controllers
             var items = from o in _context.DataProforma select o;
             items = items.
                 Include(p => p.Producto).
-                Where(s => s.UserID.Equals(userID));
+                Where(s => s.UserID.Equals(userID) && s.Status.Equals("PENDIENTE"));
 
                 var elements = await items.ToListAsync();
                 var total = elements.Sum(c => c.Quantity * c.Price);
