@@ -20,5 +20,11 @@ namespace Estilos.Data
 
         public DbSet<Estilos.Models.Proforma> DataProforma { get; set;}
 
+        public DbSet<Estilos.Models.Pago> DataPago { get; set;}
+
+        public DbSet<Estilos.Models.Pedido> DataPedido { get; set;}
+
+        public DbSet<Estilos.Models.DetallePedido> DetallePedido { get; set;}
+
     }
 }

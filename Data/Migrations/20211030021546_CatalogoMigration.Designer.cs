@@ -3,15 +3,17 @@ using System;
 using Estilos.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Estilos.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211030021546_CatalogoMigration")]
+    partial class CatalogoMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,96 +48,6 @@ namespace Estilos.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("t_contact");
-                });
-
-            modelBuilder.Entity("Estilos.Models.DetallePedido", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric");
-
-                    b.Property<int?>("ProductoId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("pedidoID")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("ProductoId");
-
-                    b.HasIndex("pedidoID");
-
-                    b.ToTable("t_order_detail");
-                });
-
-            modelBuilder.Entity("Estilos.Models.Pago", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<string>("Cvv")
-                        .HasColumnType("text");
-
-                    b.Property<string>("DueDateYYMM")
-                        .HasColumnType("text");
-
-                    b.Property<decimal>("MontoTotal")
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("NombreTarjeta")
-                        .HasColumnType("text");
-
-                    b.Property<string>("NumeroTarjeta")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("PaymentDate")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.Property<string>("UserID")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("t_pago");
-                });
-
-            modelBuilder.Entity("Estilos.Models.Pedido", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<string>("Status")
-                        .HasColumnType("text");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("UserID")
-                        .HasColumnType("text");
-
-                    b.Property<int?>("pagoId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("pagoId");
-
-                    b.ToTable("t_order");
                 });
 
             modelBuilder.Entity("Estilos.Models.Product", b =>
@@ -177,36 +89,6 @@ namespace Estilos.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("t_product");
-                });
-
-            modelBuilder.Entity("Estilos.Models.Proforma", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric");
-
-                    b.Property<int?>("ProductoId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Status")
-                        .HasColumnType("text");
-
-                    b.Property<string>("UserID")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductoId");
-
-                    b.ToTable("t_proforma");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -405,39 +287,6 @@ namespace Estilos.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("Estilos.Models.DetallePedido", b =>
-                {
-                    b.HasOne("Estilos.Models.Product", "Producto")
-                        .WithMany()
-                        .HasForeignKey("ProductoId");
-
-                    b.HasOne("Estilos.Models.Pedido", "pedido")
-                        .WithMany()
-                        .HasForeignKey("pedidoID");
-
-                    b.Navigation("pedido");
-
-                    b.Navigation("Producto");
-                });
-
-            modelBuilder.Entity("Estilos.Models.Pedido", b =>
-                {
-                    b.HasOne("Estilos.Models.Pago", "pago")
-                        .WithMany()
-                        .HasForeignKey("pagoId");
-
-                    b.Navigation("pago");
-                });
-
-            modelBuilder.Entity("Estilos.Models.Proforma", b =>
-                {
-                    b.HasOne("Estilos.Models.Product", "Producto")
-                        .WithMany()
-                        .HasForeignKey("ProductoId");
-
-                    b.Navigation("Producto");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
