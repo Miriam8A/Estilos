@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\versiones\\Estilos\\Estilos.csproj",
+  "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Estilos.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,73 +15619,123 @@
   "RootNamespace": "Estilos",
   "Documents": [
     {
-      "FilePath": "d:\\versiones\\Estilos\\Views\\Shared\\Error.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\versiones\\Estilos\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\versiones\\Estilos\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\versiones\\Estilos\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\versiones\\Estilos\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\versiones\\Estilos\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\versiones\\Estilos\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Contact\\Create.cshtml",
+      "TargetPath": "Views\\Contact\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\versiones\\Estilos\\Views\\Home\\Index.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Catalogo\\CatalogoC.cshtml",
+      "TargetPath": "Views\\Catalogo\\CatalogoC.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Pago\\Create.cshtml",
+      "TargetPath": "Views\\Pago\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Catalogo\\Details.cshtml",
+      "TargetPath": "Views\\Catalogo\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\versiones\\Estilos\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Contact\\Index.cshtml",
+      "TargetPath": "Views\\Contact\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\versiones\\Estilos\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Catalogo\\CatalogoD.cshtml",
+      "TargetPath": "Views\\Catalogo\\CatalogoD.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Contact\\Edit.cshtml",
+      "TargetPath": "Views\\Contact\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\versiones\\Estilos\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\versiones\\Estilos\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\versiones\\Estilos\\Views\\Home\\AboutUS.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Home\\AboutUS.cshtml",
       "TargetPath": "Views\\Home\\AboutUS.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\versiones\\Estilos\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Proforma\\Index.cshtml",
+      "TargetPath": "Views\\Proforma\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Proforma\\Edit.cshtml",
+      "TargetPath": "Views\\Proforma\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Catalogo\\Details2.cshtml",
+      "TargetPath": "Views\\Catalogo\\Details2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],
