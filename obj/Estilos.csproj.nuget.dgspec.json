@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "d:\\2021-2\\bi\\avance\\Estilos-2\\Estilos.csproj": {}
+    "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Estilos.csproj": {}
   },
   "projects": {
-    "d:\\2021-2\\bi\\avance\\Estilos-2\\Estilos.csproj": {
+    "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Estilos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\2021-2\\bi\\avance\\Estilos-2\\Estilos.csproj",
+        "projectUniqueName": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Estilos.csproj",
         "projectName": "Estilos",
-        "projectPath": "d:\\2021-2\\bi\\avance\\Estilos-2\\Estilos.csproj",
-        "packagesPath": "C:\\Users\\MIPC\\.nuget\\packages\\",
-        "outputPath": "d:\\2021-2\\bi\\avance\\Estilos-2\\obj\\",
+        "projectPath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\Estilos.csproj",
+        "packagesPath": "C:\\Users\\ARLETH\\.nuget\\packages\\",
+        "outputPath": "d:\\F\\trabajos\\CONVALIDACION\\3 CICLO\\Programación 1\\Estilos-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MIPC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ARLETH\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
