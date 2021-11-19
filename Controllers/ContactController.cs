@@ -62,7 +62,7 @@ namespace Estilos.Controllers
             jsonObject.Append("\"demo\" ");
             jsonObject.Append("],");
             jsonObject.Append("\"from\": {");
-            jsonObject.Append("\"email\": \"arman@hotmail.com\","); 
+            jsonObject.Append("\"email\": \"admin@hotmail.com\","); 
             jsonObject.Append("\"name\": \"Armando \"");
             jsonObject.Append("},");
             jsonObject.Append("\"personalizations\": [");
