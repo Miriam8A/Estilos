@@ -3,10 +3,16 @@
     ViewData["Title"] = "Contacto";
 }
 
-<h1>@ViewData["Title"]</h1>
+<section id="catalogue" class="catalogue section-bg">
+
+<div class="container">
+    <div class="section-title">
+          <h2 data-aos="fade-in">Comentarios</h2>
+          
+        </div>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Crear nuevo</a>
 </p>
 <table class="table">
     <thead>
@@ -26,12 +32,14 @@
             </th>
         </tr>
     </thead>
+    </div>
+    </section>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Del</a>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Modificar</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
